@@ -495,33 +495,33 @@
         </div>
         <div class="card">
             
-            <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
-<link rel="stylesheet" href="/css/my-gitalk.css">
 
-<div class="card gitalk-card" data-aos="fade-up">
+            
+            <link rel="stylesheet" href="/libs/gitment/gitment-default.css">
+<link rel="stylesheet" href="/css/gitment.css">
+
+<div class="gitment-card card" data-aos="fade-up">
     <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
         <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
         <span>评论</span>
     </div>
-    <div id="gitalk-container" class="card-content"></div>
+    <div id="gitment-content" class="card-content"></div>
 </div>
 
-<script src="/libs/gitalk/gitalk.min.js"></script>
+<script src="/libs/gitment/gitment.js"></script>
 <script>
-    let gitalk = new Gitalk({
-        clientID: '510abfc4c0b3587c7ca7s',
-        clientSecret: '070d506e4e33e4d835b89e49e0249ac3cf2bd351',
-        repo: 'https://TangChen160186.github.io',
-        owner: 'TangChen160186',
-        admin: ["TangChen160186"],
-        id: '2018-09-30T17-25-30',
-        distractionFreeMode: false  // Facebook-like distraction free mode
-    });
+var gitment = new Gitment({
+    id: 'Sun Sep 30 2018 17:25:30 GMT+0800',
+    owner: 'TangChen160186',
+    repo: 'tangchen160186.myApp',
+    oauth: {
+        client_id: '5b23d0812958991d4238',
+        client_secret: 'd27ddee29c258593398216e68cc429a348d1cf71'
+    }
+});
 
-    gitalk.render('gitalk-container');
+gitment.render('gitment-content');
 </script>
-
-            
 
             
 
